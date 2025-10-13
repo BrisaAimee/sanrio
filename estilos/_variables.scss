@@ -1,0 +1,59 @@
+//Default
+
+$primary-color: #E6FFE2;
+$dark-color: #0C0C0C;
+$light-color: #ffffff;
+
+//Fonts
+
+@font-face {
+  font-family: 'Frankfurter Std';
+  src: url('../assets/fonts/Frankfurter Std Regular.otf') format('opentype');
+}
+
+$font-primary: 'Frankfurter Std', sans-serif;
+
+@font-face {
+  font-family: 'Futura Cyrillic';
+  src: url('../assets/fonts/FuturaCyrillicLight.otf') format('opentype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Futura Cyrillic';
+  src: url('../assets/fonts/FuturaCyrillicMedium.otf') format('opentype');
+  font-weight: 500;
+}
+
+$font-secondary: 'Futura Cyrillic', sans-serif;
+
+// hello kitty
+
+$kitty-primary: $light-color;
+$kitty-secondary: #C74854;
+$kitty-tertiary: #FFCDCD;
+
+// pompompurin
+
+$purin-primary: #FFFBD2;
+$purin-secondary: #674530;
+
+// kuromi
+
+$kuromi-primary: #F5E3FF;
+$kuromi-secondary: #595656;
+
+// cinnamoroll
+
+$cinnamon-primary: #E8F5FF;
+$cinnamon-secondary: #A77B48;
+
+// my melody
+
+$melody-primary: #FFEDFC;
+$melody-secondary: #C13A74;
+
+// pochacco
+
+$pochacco-primary: #FFFAF5;
+$pochacco-secondary: $dark-color;
