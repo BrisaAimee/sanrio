@@ -1,8 +1,25 @@
 @import 'variables';
 @import 'mixins';
+@import 'header';
 
 .button {
     @include button($primary-color);
     @include soft-shadow;
+    @include flex-center;
+}
+
+.foto {
+    background-color: grey;
+    width: 100%;
+    height: 25em;
+}
+
+.banner-chico {
+    background-color: $dark-color;
+    height: 1.5em;
+    width: 100%;
+    color: white;
+    font-family: $font-primary;
+    font-size: 1.7em;
     @include flex-center;
 }

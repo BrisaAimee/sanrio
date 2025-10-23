@@ -1,0 +1,24 @@
+@import 'variables';
+@import 'mixins';
+
+header {
+  background-color: $light-color;
+  border-bottom: 0.15em solid $dark-color;
+  @include flex-center;
+  padding: 1em;
+
+  img {
+    height: 3em;
+  }
+
+  nav {
+    @include flex-center;
+
+    a {
+      font-family: $font-secondary;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95em;
+    }
+  }
+}
