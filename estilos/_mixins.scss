@@ -1,0 +1,25 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin button($bg-color, $text-color: $dark-color) {
+  background-color: $bg-color;
+  color: $text-color;
+  border: none;
+  border-radius: 999px;
+  padding: 0.6rem 1.2rem;
+  font-family: $font-secondary;
+  font-weight: 500;
+  cursor: pointer;
+  
+  &:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+  }
+}
+
+@mixin soft-shadow {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}

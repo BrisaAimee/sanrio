@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "Frankfurter Std";
+  src: url("../assets/fonts/Frankfurter Std Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Futura Cyrillic";
+  src: url("../assets/fonts/FuturaCyrillicLight.otf") format("opentype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Futura Cyrillic";
+  src: url("../assets/fonts/FuturaCyrillicMedium.otf") format("opentype");
+  font-weight: 500;
+}
+.button {
+  background-color: #E6FFE2;
+  color: #0C0C0C;
+  border: none;
+  border-radius: 999px;
+  padding: 0.6rem 1.2rem;
+  font-family: "Futura Cyrillic", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}/*# sourceMappingURL=style.css.map */
