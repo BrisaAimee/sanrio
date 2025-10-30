@@ -9,34 +9,62 @@
 
 <body>
   <header class="header">
-    <button class="menu-btn">
-      <img src="media/menu.hamburguesa.png" alt="menu">
-    </button>
+    <li class="menu-btn"><a href="#"><img src="media/menu.hamburguesa.png" alt="menu"></a></li>
 
     <img src="media/sanrio-logo.png" alt="Sanrio logo" class="logo">
 
-    <div class="btn-cart-user">
-      <button class="cart-btn">
-        <img src="media/carrito.png" alt="cart">
-      </button>
-
-      <button class="user-btn">
-        <img src="media/user-logo.png" alt="user">
-      </button>
-    </div>
+    <nav class="btn-cart-user">
+      <ul>
+        <li class="cart-btn"><a href="carrito.html"><img src="media/carrito.png" alt="cart"></a></li>
+        <li class="user-btn"><a href="#"><img src="media/user-logo.png" alt="user"></a></li>
+      </ul>
+    </nav>
   </header>
-  
+
   <div class="banner-chico">
-    <h5>Nuevos productos de My Melody</h5>
+    <h5>Nuevos productos de My Melody ● 50% OFF en kuromi ● Halloween Sanrio</h5>
   </div>
 
-  <section class="foto">
+  <section class="foto"></section>
 
+  <section class="characters-section">
+    <h2>CHOOSE YOUR CHARACTER</h2>
+    <ul class="characters">
+      <li><img src="media/hello-kitty.png" alt="Hello Kitty"></li>
+      <li><img src="media/pompom.png" alt="Pompompurin"></li>
+      <li><img src="media/kuromi.png" alt="Kuromi"></li>
+      <li><img src="media/cinamon.png" alt="Cinnamoroll"></li>
+      <li><img src="media/mymelody.png" alt="My Melody"></li>
+      <li><img src="media/pocacho.png" alt="Pochacco"></li>
+    </ul>
   </section>
 
-  <button class="button">Agregar al carrito</button>
+  <section class="products">
+    <h2>PRODUCTOS DESTACADOS</h2>
+    <div class="product-grid" id="productGrid"></div>
+  </section>
 
-  <script src="assets/sanrio.js" defer></script>
+  <section class="foto2"></section>
+
+  <section class="products">
+    <h2>PRODUCTOS</h2>
+    <div id="productGrid2" class="product-grid"></div>
+  </section>
+
+    <section class="foto"></section>
+
+
+  <section class="promo-grid">
+  <div class="promo-item item1"></div>
+  <div class="promo-item item2"></div>
+  <div class="promo-item item3"></div>
+  <div class="promo-item item4"></div>
+</section>
+
+  <section class="foto2"></section>
+
+
+  <script src="assets/sanrio.js"></script>
 </body>
 
 </html>

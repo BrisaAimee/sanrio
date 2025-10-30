@@ -1,24 +1,65 @@
 @import 'variables';
 @import 'mixins';
 
-header {
+.header {
   background-color: $light-color;
   border-bottom: 0.15em solid $dark-color;
+  padding: 1em 2em;
   @include flex-center;
-  padding: 1em;
+  position: relative;
 
-  img {
-    height: 3em;
-  }
-
-  nav {
-    @include flex-center;
+  .menu-btn {
+    list-style: none;
+    position: absolute;
+    left: 1.5em;
+    top: 1.5em;
 
     a {
-      font-family: $font-secondary;
-      text-decoration: none;
-      font-weight: 500;
-      font-size: 0.95em;
+      display: inline-block;
+      img {
+        width: 1.5em;
+        height: 1.5em;
+        transition: transform 0.2s ease;
+      }
+
+      &:hover img {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .logo {
+    height: 3.5em;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .btn-cart-user {
+    position: absolute;
+    right: 1.5em;
+    top: 1em;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      @include flex-center;
+      gap: 1em;
+    }
+
+    li {
+      a {
+        display: inline-block;
+        img {
+          width: 1.5em;
+          height: 1.5em;
+          transition: transform 0.2s ease;
+        }
+
+        &:hover img {
+          transform: scale(1.1);
+        }
+      }
     }
   }
 }
