@@ -8,9 +8,9 @@ body {
 }
 
 .button {
-    @include button($primary-color);
-    @include soft-shadow;
-    @include flex-center;
+ @include soft-shadow;
+  @include flex-center;
+  @include button($kitty-tertiary, $dark-color);
 }
 
 .foto {
