@@ -1,10 +1,10 @@
 const products = [
-    { nombre: "Peluche Hello Kitty", precio: 120, imagen: "media/peluche-hello.png", personaje: "Hello Kitty" },
-    { nombre: "Taza Kuromi", precio: 90, imagen: "media/taza-kuromi.png", personaje: "Kuromi" },
-    { nombre: "Mochila Cinnamoroll", precio: 180, imagen: "media/mochila-cinna.png", personaje: "Cinnamoroll" },
-    { nombre: "Remera My Melody", precio: 150, imagen: "media/remera-melody.png", personaje: "My Melody" },
-    { nombre: "Gorro Pompompurin", precio: 95, imagen: "media/gorro-purin.png", personaje: "Pompompurin" },
-    { nombre: "Taza Pochacco", precio: 80, imagen: "media/taza-pochacco.png", personaje: "Pochacco" }
+    { nombre: "Set Sanrio cartas", precio: 120, imagen: "media/productos/sanrio/sanrio-cartas.png", personaje: "Sanrio" },
+    { nombre: "Set Sanrio makeup", precio: 90, imagen: "media/productos/sanrio/sanrio-makeup.png", personaje: "Sanrio" },
+    { nombre: "Set tazas Sanrio", precio: 180, imagen: "media/productos/sanrio/sanrio-set-tazas.png", personaje: "Sanrio" },
+    { nombre: "Set Sanrio útiles", precio: 150, imagen: "media/productos/sanrio/sanrio-utiles.png", personaje: "Sanrio" },
+    { nombre: "Ramo de Sanrio", precio: 95, imagen: "media/productos/sanrio/sanrio-ramo.jpg", personaje: "Sanrio" },
+    { nombre: "Super pack Sanrio", precio: 200, imagen: "media/productos/sanrio/sanrio-super-pack.png", personaje: "Sanrio" }
 ];
 
 const grid = document.getElementById("productGrid");
@@ -56,20 +56,20 @@ for (let i = 0; i < products.length; i++) {
 }
 
 const moreProducts = [
-    { nombre: "Peluche Kuromi", precio: 120, imagen: "media/peluche-kuromi.png", personaje: "Kuromi" },
-    { nombre: "Peluche Cinnamoroll", precio: 120, imagen: "media/peluche-cinna.png", personaje: "Cinnamoroll" },
-    { nombre: "Peluche My Melody", precio: 120, imagen: "media/peluche-melody.png", personaje: "My Melody" },
-    { nombre: "Peluche Pompompurin", precio: 120, imagen: "media/peluche-purin.png", personaje: "Pompompurin" },
-    { nombre: "Taza Hello Kitty", precio: 85, imagen: "media/taza-hello.png", personaje: "Hello Kitty" },
-    { nombre: "Taza Pochacco", precio: 80, imagen: "media/taza-pochacco.png", personaje: "Pochacco" },
-    { nombre: "Bolso Kuromi", precio: 200, imagen: "media/bolso-kuromi.png", personaje: "Kuromi" },
-    { nombre: "Remera Cinnamoroll", precio: 150, imagen: "media/remera-cinna.png", personaje: "Cinnamoroll" },
-    { nombre: "Gorro My Melody", precio: 95, imagen: "media/gorro-melody.png", personaje: "My Melody" },
-    { nombre: "Tote Bag Pochacco", precio: 110, imagen: "media/bolso-pochacco.png", personaje: "Pochacco" },
-    { nombre: "Llaveros Sanrio Set", precio: 60, imagen: "media/llaveros.png", personaje: "Sanrio" },
-    { nombre: "Poster Sanrio", precio: 50, imagen: "media/poster-sanrio.png", personaje: "Sanrio" },
-    { nombre: "Set Stickers Sanrio", precio: 40, imagen: "media/stickers-sanrio.png", personaje: "Sanrio" },
-    { nombre: "Botella Hello Kitty", precio: 130, imagen: "media/botella-hello.png", personaje: "Hello Kitty" }
+    { nombre: "Peluche Kuromi", precio: 120, imagen: "media/productos/kuromi/kuromi-peluche.png", personaje: "Kuromi" },
+    { nombre: "Peluche Cinnamoroll", precio: 120, imagen: "media/productos/cinnamonroll/cinnamonroll-peluche.png", personaje: "Cinnamoroll" },
+    { nombre: "Peluche My Melody", precio: 120, imagen: "media/productos/mymelody/mymelody-peluche.png", personaje: "My Melody" },
+    { nombre: "Peluche Pompompurin", precio: 120, imagen: "media/productos/pompompurin/pompompurin-peluche.png", personaje: "Pompompurin" },
+    { nombre: "Paraguas Hello Kitty", precio: 85, imagen: "media/productos/hellokitty/hellokitty-paraguas.png", personaje: "Hello Kitty" },
+    { nombre: "Bolsa Pochacco", precio: 80, imagen: "media/productos/pochacco/pochacco-bolsa.png", personaje: "Pochacco" },
+    { nombre: "Mochila Kuromi", precio: 200, imagen: "media/productos/kuromi/kuromi-mochila.png", personaje: "Kuromi" },
+    { nombre: "Remera Cinnamoroll", precio: 150, imagen: "media/productos/cinnamonroll/cinnamonroll-remera.png", personaje: "Cinnamoroll" },
+    { nombre: "Orejas My Melody", precio: 95, imagen: "media/productos/mymelody/mymelody-orejas.png", personaje: "My Melody" },
+    { nombre: "Mochila Pochacco", precio: 110, imagen: "media/productos/pochacco/pochacco-mochila.png", personaje: "Pochacco" },
+    { nombre: "Útiles Sanrio", precio: 60, imagen: "media/productos/sanrio/sanrio-utiles2.png", personaje: "Sanrio" },
+    { nombre: "Set peine Sanrio", precio: 50, imagen: "media/productos/sanrio/sanrio-peine.png", personaje: "Sanrio" },
+    { nombre: "Billetera Sanrio", precio: 40, imagen: "media/productos/sanrio/sanrio-billetera.png", personaje: "Sanrio" },
+    { nombre: "Llavero Hello Kitty", precio: 130, imagen: "media/productos/hellokitty/hellokitty-llavero.png", personaje: "Hello Kitty" }
 
 ];
 
