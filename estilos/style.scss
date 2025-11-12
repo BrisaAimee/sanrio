@@ -4,57 +4,57 @@
 @import 'products';
 
 body {
-    background-color: $primary-color;
-    margin: 0;
-    padding: 0;
+  background-color: $primary-color;
+  margin: 0;
+  padding: 0;
 }
 
 .button {
- @include soft-shadow;
+  @include soft-shadow;
   @include flex-center;
   @include button($kitty-tertiary, $dark-color);
 }
 
 .foto {
-    background-image: url(../media/banner1.png);
- background-size: cover;   
+  background-image: url(../media/banner1.png);
+  background-size: cover;
   background-position: center;
   width: 100%;
   height: 25em;
 }
 
 .foto2 {
-    background-image: url(../media/banner2.png);
-    width: 100%;
-    height: 15em;
-    background-size: cover;
-    background-position: center;
+  background-image: url(../media/banner2.png);
+  width: 100%;
+  height: 15em;
+  background-size: cover;
+  background-position: center;
 }
 
 .foto3 {
-    background-image: url(../media/banner3.png);
-    width: 100%;
-    height: 25em;
-    background-size: cover;
-    background-position: center;
+  background-image: url(../media/banner3.png);
+  width: 100%;
+  height: 25em;
+  background-size: cover;
+  background-position: center;
 }
 
 .foto4 {
-    background-image: url(../media/footerg-desk.jpg);
-    width: 100%;
-    height: 15em;
-    background-size: cover;
-    background-position: center;
+  background-image: url(../media/footerg-desk.jpg);
+  width: 100%;
+  height: 15em;
+  background-size: cover;
+  background-position: center;
 }
 
 .banner-chico {
-    background-color: $dark-color;
-    height: 1.5em;
-    width: 100%;
-    color: white;
-    font-family: $font-primary;
-    font-size: 1.7em;
-    @include flex-center;
+  background-color: $dark-color;
+  height: 1.5em;
+  width: 100%;
+  color: white;
+  font-family: $font-primary;
+  font-size: 1.7em;
+  @include flex-center;
 }
 
 .characters-section {
