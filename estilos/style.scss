@@ -7,7 +7,15 @@ body {
   background-color: $primary-color;
   margin: 0;
   padding: 0;
+  transition: background-color 0.8s ease-in-out;
 }
+
+body.hello-kitty { background-color: $light-color; }
+body.kuromi { background-color: $kuromi-primary; }
+body.cinnamonroll { background-color: $cinnamon-primary; }
+body.my-melody { background-color: $melody-primary; }
+body.pompompurin { background-color: $purin-primary; }
+body.pochacco { background-color: $pochacco-primary; }
 
 .button {
   @include soft-shadow;

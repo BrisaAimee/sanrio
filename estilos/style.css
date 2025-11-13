@@ -112,7 +112,6 @@
 }
 
 .products {
-  background-color: #E6FFE2;
   padding: 2em 10em;
 }
 .products h2 {
@@ -130,6 +129,7 @@
   justify-items: center;
   max-width: 100%;
   box-sizing: border-box;
+  transition: border-color 0.6s ease-in-out;
 }
 .products .product-card {
   background-color: #ffffff;
@@ -141,6 +141,7 @@
   width: 12em;
   overflow: hidden;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.6s ease-in-out, color 0.6s ease-in-out;
 }
 .products .product-card:hover {
   transform: translateY(-0.2em);
@@ -156,6 +157,7 @@
   align-items: center;
   position: relative;
   overflow: hidden;
+  transition: border-color 0.6s ease-in-out;
 }
 .products .product-card .card-top img {
   width: 100%;
@@ -184,12 +186,80 @@
   font-size: 0.9em;
   color: #0C0C0C;
   margin-left: 0.2em;
+  transition: color 0.6s ease-in-out;
 }
 .products .product-card .card-bottom .info .price {
   font-family: "Futura Cyrillic", sans-serif;
   font-size: 0.85em;
   font-weight: 500;
   color: #0C0C0C;
+  transition: color 0.6s ease-in-out;
+}
+
+body.hello-kitty .product-card {
+  border-color: #C74854;
+}
+body.hello-kitty .products .product-card .card-bottom .info h3,
+body.hello-kitty .products .product-card .card-bottom .info .price {
+  color: #C74854;
+}
+body.hello-kitty .product-card .card-top {
+  border-bottom-color: #C74854;
+}
+
+body.kuromi .product-card {
+  border-color: #595656;
+}
+body.kuromi .products .product-card .card-bottom .info h3,
+body.kuromi .products .product-card .card-bottom .info .price {
+  color: #595656;
+}
+body.kuromi .product-card .card-top {
+  border-bottom-color: #595656;
+}
+
+body.cinnamonroll .product-card {
+  border-color: #A77B48;
+}
+body.cinnamonroll .products .product-card .card-bottom .info h3,
+body.cinnamonroll .products .product-card .card-bottom .info .price {
+  color: #A77B48;
+}
+body.cinnamonroll .product-card .card-top {
+  border-bottom-color: #A77B48;
+}
+
+body.my-melody .product-card {
+  border-color: #C13A74;
+}
+body.my-melody .products .product-card .card-bottom .info h3,
+body.my-melody .products .product-card .card-bottom .info .price {
+  color: #C13A74;
+}
+body.my-melody .product-card .card-top {
+  border-bottom-color: #C13A74;
+}
+
+body.pompompurin .product-card {
+  border-color: #674530;
+}
+body.pompompurin .products .product-card .card-bottom .info h3,
+body.pompompurin .products .product-card .card-bottom .info .price {
+  color: #674530;
+}
+body.pompompurin .product-card .card-top {
+  border-bottom-color: #674530;
+}
+
+body.pochacco .product-card {
+  border-color: #0C0C0C;
+}
+body.pochacco .products .product-card .card-bottom .info h3,
+body.pochacco .products .product-card .card-bottom .info .price {
+  color: #0C0C0C;
+}
+body.pochacco .product-card .card-top {
+  border-bottom-color: #0C0C0C;
 }
 
 .promo-grid {
@@ -240,6 +310,31 @@ body {
   background-color: #E6FFE2;
   margin: 0;
   padding: 0;
+  transition: background-color 0.8s ease-in-out;
+}
+
+body.hello-kitty {
+  background-color: #ffffff;
+}
+
+body.kuromi {
+  background-color: #F5E3FF;
+}
+
+body.cinnamonroll {
+  background-color: #def1ff;
+}
+
+body.my-melody {
+  background-color: #FFEDFC;
+}
+
+body.pompompurin {
+  background-color: #FFFBD2;
+}
+
+body.pochacco {
+  background-color: #FFFAF5;
 }
 
 .button {

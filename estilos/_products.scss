@@ -1,6 +1,6 @@
 .products {
-  background-color: $primary-color;
   padding: 2em 10em;
+
   h2 {
     font-family: $font-primary;
     color: $dark-color;
@@ -17,6 +17,7 @@
     justify-items: center;
     max-width: 100%;
     box-sizing: border-box;
+    transition: border-color 0.6s ease-in-out;
   }
 
   .product-card {
@@ -29,6 +30,7 @@
     width: 12em;
     overflow: hidden;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.6s ease-in-out, color 0.6s ease-in-out;
 
     &:hover {
       transform: translateY(-0.2em);
@@ -45,6 +47,8 @@
       align-items: center;
       position: relative;
       overflow: hidden;
+      transition: border-color 0.6s ease-in-out;
+
 
       img {
         width: 100%;
@@ -77,6 +81,8 @@
           font-size: 0.9em;
           color: $dark-color;
           margin-left: 0.2em;
+          transition: color 0.6s ease-in-out;
+
         }
 
         .price {
@@ -84,9 +90,100 @@
           font-size: 0.85em;
           font-weight: 500;
           color: $dark-color;
+          transition: color 0.6s ease-in-out;
         }
       }
     }
+  }
+}
+
+body.hello-kitty {
+  .product-card {
+    border-color: $kitty-secondary;
+  }
+
+  .products .product-card .card-bottom .info h3,
+  .products .product-card .card-bottom .info .price {
+    color: $kitty-secondary;
+  }
+
+  .product-card .card-top {
+    border-bottom-color: $kitty-secondary;
+  }
+}
+
+body.kuromi {
+  .product-card {
+    border-color: $kuromi-secondary;
+  }
+
+  .products .product-card .card-bottom .info h3,
+  .products .product-card .card-bottom .info .price {
+    color: $kuromi-secondary;
+  }
+
+  .product-card .card-top {
+    border-bottom-color: $kuromi-secondary;
+  }
+}
+
+body.cinnamonroll {
+  .product-card {
+    border-color: $cinnamon-secondary;
+  }
+
+  .products .product-card .card-bottom .info h3,
+  .products .product-card .card-bottom .info .price {
+    color: $cinnamon-secondary;
+  }
+
+  .product-card .card-top {
+    border-bottom-color: $cinnamon-secondary;
+  }
+}
+
+body.my-melody {
+  .product-card {
+    border-color: $melody-secondary;
+  }
+
+  .products .product-card .card-bottom .info h3,
+  .products .product-card .card-bottom .info .price {
+    color: $melody-secondary;
+  }
+
+  .product-card .card-top {
+    border-bottom-color: $melody-secondary;
+  }
+}
+
+body.pompompurin {
+  .product-card {
+    border-color: $purin-secondary;
+  }
+
+  .products .product-card .card-bottom .info h3,
+  .products .product-card .card-bottom .info .price {
+    color: $purin-secondary;
+  }
+
+  .product-card .card-top {
+    border-bottom-color: $purin-secondary;
+  }
+}
+
+body.pochacco {
+  .product-card {
+    border-color: $pochacco-secondary;
+  }
+
+  .products .product-card .card-bottom .info h3,
+  .products .product-card .card-bottom .info .price {
+    color: $pochacco-secondary;
+  }
+
+  .product-card .card-top {
+    border-bottom-color: $pochacco-secondary;
   }
 }
 
@@ -115,7 +212,7 @@
   }
 
   .item2 {
-        background-image: url(../media/fondos.png);
+    background-image: url(../media/fondos.png);
     background-size: cover;
     background-position: center;
     grid-row: 1 / 3;

@@ -9,13 +9,13 @@ const mainProducts = [
 
 const moreProducts = [
     { nombre: "Peluche Kuromi", precio: 120, imagen: "media/productos/kuromi/kuromi-peluche.png", personaje: "Kuromi" },
-    { nombre: "Peluche Cinnamoroll", precio: 120, imagen: "media/productos/cinnamonroll/cinnamonroll-peluche.png", personaje: "Cinnamoroll" },
+    { nombre: "Peluche Cinnamoroll", precio: 120, imagen: "media/productos/cinnamonroll/cinnamonroll-peluche.png", personaje: "Cinnamonroll" },
     { nombre: "Peluche My Melody", precio: 120, imagen: "media/productos/mymelody/mymelody-peluche.png", personaje: "My Melody" },
     { nombre: "Peluche Pompompurin", precio: 120, imagen: "media/productos/pompompurin/pompompurin-peluche.png", personaje: "Pompompurin" },
     { nombre: "Paraguas Hello Kitty", precio: 85, imagen: "media/productos/hellokitty/hellokitty-paraguas.png", personaje: "Hello Kitty" },
     { nombre: "Bolsa Pochacco", precio: 80, imagen: "media/productos/pochacco/pochacco-bolsa.png", personaje: "Pochacco" },
     { nombre: "Mochila Kuromi", precio: 200, imagen: "media/productos/kuromi/kuromi-mochila.png", personaje: "Kuromi" },
-    { nombre: "Remera Cinnamoroll", precio: 150, imagen: "media/productos/cinnamonroll/cinnamonroll-remera.png", personaje: "Cinnamoroll" },
+    { nombre: "Remera Cinnamoroll", precio: 150, imagen: "media/productos/cinnamonroll/cinnamonroll-remera.png", personaje: "Cinnamonroll" },
     { nombre: "Orejas My Melody", precio: 95, imagen: "media/productos/mymelody/mymelody-orejas.png", personaje: "My Melody" },
     { nombre: "Mochila Pochacco", precio: 110, imagen: "media/productos/pochacco/pochacco-mochila.png", personaje: "Pochacco" },
     { nombre: "Útiles Sanrio", precio: 60, imagen: "media/productos/sanrio/sanrio-utiles2.png", personaje: "Sanrio" },
@@ -30,15 +30,15 @@ const moreProducts = [
     { nombre: "Pijama Kuromi", precio: 88, imagen: "media/productos/kuromi/kuromi-pijama.png", personaje: "Kuromi" },
     { nombre: "Pop Kuromi", precio: 130, imagen: "media/productos/kuromi/kuromi-pop.png", personaje: "Kuromi" },
     { nombre: "Peluche pascuas Kuromi", precio: 109, imagen: "media/productos/kuromi/kuromi-peluche-pascuas.png", personaje: "Kuromi" },
-    { nombre: "Billetera Cinnamoroll", precio: 220, imagen: "media/productos/cinnamonroll/cinnamonroll-billetera.png", personaje: "Cinnamoroll" },
-    { nombre: "Llavero Cinnamoroll", precio: 76, imagen: "media/productos/cinnamonroll/cinnamonroll-llavero.png", personaje: "Cinnamoroll" },
-    { nombre: "Neceser Cinnamoroll", precio: 45, imagen: "media/productos/cinnamonroll/cinnamonroll-neceser.png", personaje: "Cinnamoroll" },
-    { nombre: "Peluche halloween Cinnamoroll", precio: 87, imagen: "media/productos/cinnamonroll/cinnamonroll-peluche-halloween.png", personaje: "Cinnamoroll" },
-    { nombre: "Peluche Navidad Cinnamoroll", precio: 100, imagen: "media/productos/cinnamonroll/cinnamonroll-peluche-navidad.png", personaje: "Cinnamoroll" },
-    { nombre: "Peluche pascuas Cinnamoroll", precio: 43, imagen: "media/productos/cinnamonroll/cinnamonroll-peluche-pascuas.png", personaje: "Cinnamoroll" },
-    { nombre: "Pop Cinnamoroll", precio: 211, imagen: "media/productos/cinnamonroll/cinnamonroll-pop.png", personaje: "Cinnamoroll" },
-    { nombre: "Antifaz Cinnamoroll", precio: 120, imagen: "media/productos/cinnamonroll/cinnamonroll-sleep.png", personaje: "Cinnamoroll" },
-    { nombre: "Taza Cinnamoroll", precio: 33, imagen: "media/productos/cinnamonroll/cinnamonroll-taza.png", personaje: "Cinnamoroll" },
+    { nombre: "Billetera Cinnamoroll", precio: 220, imagen: "media/productos/cinnamonroll/cinnamonroll-billetera.png", personaje: "Cinnamonroll" },
+    { nombre: "Llavero Cinnamoroll", precio: 76, imagen: "media/productos/cinnamonroll/cinnamonroll-llavero.png", personaje: "Cinnamonroll" },
+    { nombre: "Neceser Cinnamoroll", precio: 45, imagen: "media/productos/cinnamonroll/cinnamonroll-neceser.png", personaje: "Cinnamonroll" },
+    { nombre: "Peluche halloween Cinnamoroll", precio: 87, imagen: "media/productos/cinnamonroll/cinnamonroll-peluche-halloween.png", personaje: "Cinnamonroll" },
+    { nombre: "Peluche Navidad Cinnamoroll", precio: 100, imagen: "media/productos/cinnamonroll/cinnamonroll-peluche-navidad.png", personaje: "Cinnamonroll" },
+    { nombre: "Peluche pascuas Cinnamoroll", precio: 43, imagen: "media/productos/cinnamonroll/cinnamonroll-peluche-pascuas.png", personaje: "Cinnamonroll" },
+    { nombre: "Pop Cinnamoroll", precio: 211, imagen: "media/productos/cinnamonroll/cinnamonroll-pop.png", personaje: "Cinnamonroll" },
+    { nombre: "Antifaz Cinnamoroll", precio: 120, imagen: "media/productos/cinnamonroll/cinnamonroll-sleep.png", personaje: "Cinnamonroll" },
+    { nombre: "Taza Cinnamoroll", precio: 33, imagen: "media/productos/cinnamonroll/cinnamonroll-taza.png", personaje: "Cinnamonroll" },
     { nombre: "Billetera Pochacco", precio: 46, imagen: "media/productos/pochacco/pochacco-billetera.png", personaje: "Pochacco" },
     { nombre: "Cartuchera Pochacco", precio: 199, imagen: "media/productos/pochacco/pochacco-cartuchera.png", personaje: "Pochacco" },
     { nombre: "Lapiceras Pochacco", precio: 34, imagen: "media/productos/pochacco/pochacco-lapiceras.png", personaje: "Pochacco" },
@@ -106,6 +106,8 @@ const wallpapers = [
     { imagen: "media/productos/wallaper/sanrio5.jpg", personaje: "Sanrio" }
 ]
 
+// primera sección de productos
+
 const grid = document.getElementById("productGrid");
 
 for (let i = 0; i < mainProducts.length; i++) {
@@ -153,6 +155,8 @@ for (let i = 0; i < mainProducts.length; i++) {
 
     grid.appendChild(card);
 }
+
+// segunda sección de productos
 
 const grid2 = document.getElementById("productGrid2");
 
@@ -202,3 +206,62 @@ for (let i = 0; i < moreProducts.length; i++) {
     grid2.appendChild(card);
 }
 
+// agrega eventos a las imágenes de los personajes
+document.querySelectorAll(".characters img").forEach(img => {
+    img.addEventListener("click", () => {
+        const personaje = img.dataset.character; // obtiene el personaje
+        document.body.className = "";
+        document.body.classList.add(personaje.toLowerCase().replace(" ", "-"));
+
+
+        grid2.innerHTML = "";
+
+        for (let i = 0; i < moreProducts.length; i++) {
+            const p = moreProducts[i];
+            if (p.personaje === personaje) {
+
+                const card = document.createElement("div");
+                card.classList.add("product-card");
+
+                const top = document.createElement("div");
+                top.classList.add("card-top");
+
+                const fav = document.createElement("div");
+                fav.classList.add("favorite");
+                const heart = document.createElement("img");
+                heart.src = "media/corazon.png";
+                heart.alt = "Me gusta";
+                fav.appendChild(heart);
+
+                const imgP = document.createElement("img");
+                imgP.src = p.imagen;
+                imgP.alt = p.nombre;
+
+                top.appendChild(imgP);
+                top.appendChild(fav);
+
+                const bottom = document.createElement("div");
+                bottom.classList.add("card-bottom");
+
+                const info = document.createElement("div");
+                info.classList.add("info");
+
+                const name = document.createElement("h3");
+                name.textContent = p.nombre;
+
+                const price = document.createElement("p");
+                price.classList.add("price");
+                price.textContent = `$${p.precio}`;
+
+                info.appendChild(name);
+                info.appendChild(price);
+                bottom.appendChild(info);
+
+                card.appendChild(top);
+                card.appendChild(bottom);
+
+                grid2.appendChild(card);
+            }
+        }
+    });
+});
