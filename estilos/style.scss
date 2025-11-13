@@ -16,6 +16,29 @@ body.hello-kitty {
 
 body.kuromi {
   background-color: $kuromi-primary;
+
+  .foto .option-1 {
+    @include options;
+    left: 65%;
+    top: 45%;
+  }
+
+  .foto .option-2 {
+    @include options;
+    left: 65%;
+    top: 50%;
+  }
+
+  .foto .option-3 {
+    @include options;
+    left: 65%;
+    top: -15%;
+  }
+
+    .foto {
+    background-image: url(../media/banners/kuromi/banner-kuromi.png);
+    transition: background-image 0.6s ease-in-out;
+  }
 }
 
 body.cinnamonroll {
@@ -41,7 +64,7 @@ body.pochacco {
 }
 
 .foto {
-  background-image: url(../media/banner1.png);
+  background-image: url(../media/banners/banner1.png);
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -74,7 +97,7 @@ body.pochacco {
 
 .banner-chico {
   background-color: $dark-color;
-  height: 1.5em;
+  height: 1.2em;
   width: 100%;
   color: white;
   font-family: $font-primary;

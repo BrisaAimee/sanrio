@@ -161,53 +161,53 @@ for (let i = 0; i < mainProducts.length; i++) {
 const grid2 = document.getElementById("productGrid2");
 
 function mostrarProductos(lista) {
-  grid2.innerHTML = "";
+    grid2.innerHTML = "";
 
-  for (let i = 0; i < lista.length; i++) {
-    const p = lista[i];
+    for (let i = 0; i < lista.length; i++) {
+        const p = lista[i];
 
-    const card = document.createElement("div");
-    card.classList.add("product-card");
+        const card = document.createElement("div");
+        card.classList.add("product-card");
 
-    const top = document.createElement("div");
-    top.classList.add("card-top");
+        const top = document.createElement("div");
+        top.classList.add("card-top");
 
-    const fav = document.createElement("div");
-    fav.classList.add("favorite");
-    const heart = document.createElement("img");
-    heart.src = "media/corazon.png";
-    heart.alt = "Me gusta";
-    fav.appendChild(heart);
+        const fav = document.createElement("div");
+        fav.classList.add("favorite");
+        const heart = document.createElement("img");
+        heart.src = "media/corazon.png";
+        heart.alt = "Me gusta";
+        fav.appendChild(heart);
 
-    const img = document.createElement("img");
-    img.src = p.imagen;
-    img.alt = p.nombre;
+        const img = document.createElement("img");
+        img.src = p.imagen;
+        img.alt = p.nombre;
 
-    top.appendChild(img);
-    top.appendChild(fav);
+        top.appendChild(img);
+        top.appendChild(fav);
 
-    const bottom = document.createElement("div");
-    bottom.classList.add("card-bottom");
+        const bottom = document.createElement("div");
+        bottom.classList.add("card-bottom");
 
-    const info = document.createElement("div");
-    info.classList.add("info");
+        const info = document.createElement("div");
+        info.classList.add("info");
 
-    const name = document.createElement("h3");
-    name.textContent = p.nombre;
+        const name = document.createElement("h3");
+        name.textContent = p.nombre;
 
-    const price = document.createElement("p");
-    price.classList.add("price");
-    price.textContent = `$${p.precio}`;
+        const price = document.createElement("p");
+        price.classList.add("price");
+        price.textContent = `$${p.precio}`;
 
-    info.appendChild(name);
-    info.appendChild(price);
-    bottom.appendChild(info);
+        info.appendChild(name);
+        info.appendChild(price);
+        bottom.appendChild(info);
 
-    card.appendChild(top);
-    card.appendChild(bottom);
+        card.appendChild(top);
+        card.appendChild(bottom);
 
-    grid2.appendChild(card);
-  }
+        grid2.appendChild(card);
+    }
 }
 
 const destacados = moreProducts.slice(0, 14);
@@ -272,3 +272,5 @@ document.querySelectorAll(".characters img").forEach(img => {
         }
     });
 });
+
+

@@ -25,3 +25,31 @@
 @mixin soft-shadow {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
 }
+
+@mixin options {
+  width: 4em;
+  height: 4em;
+  background-color: $kuromi-secondary;
+  border-radius: 50%;
+  border: 0.3em solid $kuromi-primary;
+  position: relative;
+  transition: transform 0.3s ease-in, box-shadow 0.3s ease;
+
+
+  &:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.05);
+  }
+
+  &::before {
+    content: attr(data-num);
+    color: white;
+    font-family: $font-primary;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.1em;
+  }
+}
