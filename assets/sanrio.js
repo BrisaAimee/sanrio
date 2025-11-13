@@ -65,46 +65,16 @@ const moreProducts = [
     { nombre: "Peluche unicornio Hello Kitty", precio: 76, imagen: "media/productos/hellokitty/hellokitty-peluche-unicorn.png", personaje: "Hello Kitty" },
     { nombre: "Peluche Hello Kitty", precio: 89, imagen: "media/productos/hellokitty/hellokitty-peluche.png", personaje: "Hello Kitty" },
     { nombre: "Vicha Hello Kitty", precio: 45, imagen: "media/productos/hellokitty/hellokitty-vincha.png", personaje: "Hello Kitty" },
+    { nombre: "Cartuchera My Melody", precio: 212, imagen: "media/productos/mymelody/mymelody-cartuchera.png", personaje: "My Melody" },
+    { nombre: "Hebillas My Melody", precio: 212, imagen: "media/productos/mymelody/mymelody-hebillas.png", personaje: "My Melody" },
+    { nombre: "Lavero My Melody", precio: 212, imagen: "media/productos/mymelody/mymelody-llavero.png", personaje: "My Melody" },
+    { nombre: "Mochila My Melody", precio: 212, imagen: "media/productos/mymelody/mymelody-mochila.png", personaje: "My Melody" },
+    { nombre: "Peluche halloween My Melody", precio: 212, imagen: "media/productos/mymelody/mymelody-peluche-halloween.png", personaje: "My Melody" },
+    { nombre: "Peluche navidad My Melody", precio: 212, imagen: "media/productos/mymelody/mymelody-peluche-navidad.png", personaje: "My Melody" },
+    { nombre: "Peluche pascuas My Melody", precio: 212, imagen: "media/productos/mymelody/mymelody-peluche-pascuas.png", personaje: "My Melody" },
+    { nombre: "Remera My Melody", precio: 212, imagen: "media/productos/mymelody/mymelody-remera.png", personaje: "My Melody" },
+    { nombre: "Taza My Melody", precio: 212, imagen: "media/productos/mymelody/mymelody-taza.png", personaje: "My Melody" },
 ];
-
-
-const wallpapers = [
-    { imagen: "media/productos/wallaper/hellokitty.jpg", personaje: "Hello Kitty" },
-    { imagen: "media/productos/wallaper/hellokitty2.jpg", personaje: "Hello Kitty" },
-    { imagen: "media/productos/wallaper/hellokitty3.jpg", personaje: "Hello Kitty" },
-    { imagen: "media/productos/wallaper/hellokitty4.jpg", personaje: "Hello Kitty" },
-    { imagen: "media/productos/wallaper/hellokitty5.jpg", personaje: "Hello Kitty" },
-    { imagen: "media/productos/wallaper/cinnamonroll.jpg", personaje: "Cinnamonroll" },
-    { imagen: "media/productos/wallaper/cinnamonroll2.jpg", personaje: "Cinnamonroll" },
-    { imagen: "media/productos/wallaper/cinnamonroll3.jpg", personaje: "Cinnamonroll" },
-    { imagen: "media/productos/wallaper/cinnamonroll4.jpg", personaje: "Cinnamonroll" },
-    { imagen: "media/productos/wallaper/cinnamonroll5.jpg", personaje: "Cinnamonroll" },
-    { imagen: "media/productos/wallaper/kuromi.jpg", personaje: "Kuromi" },
-    { imagen: "media/productos/wallaper/kuromi2.png", personaje: "Kuromi" },
-    { imagen: "media/productos/wallaper/kuromi3.jpg", personaje: "Kuromi" },
-    { imagen: "media/productos/wallaper/kuromi4.jpg", personaje: "Kuromi" },
-    { imagen: "media/productos/wallaper/kuromi5.jpg", personaje: "Kuromi" },
-    { imagen: "media/productos/wallaper/mymelody.jpg", personaje: "My Melody" },
-    { imagen: "media/productos/wallaper/mymelody2.jpg", personaje: "My Melody" },
-    { imagen: "media/productos/wallaper/mymelody3.jpg", personaje: "My Melody" },
-    { imagen: "media/productos/wallaper/mymelody4.jpg", personaje: "My Melody" },
-    { imagen: "media/productos/wallaper/mymelody5.jpg", personaje: "My Melody" },
-    { imagen: "media/productos/wallaper/pompompurin.jpg", personaje: "Pompompurin" },
-    { imagen: "media/productos/wallaper/pompompurin2.jpg", personaje: "Pompompurin" },
-    { imagen: "media/productos/wallaper/pompompurin3.jpg", personaje: "Pompompurin" },
-    { imagen: "media/productos/wallaper/pompompurin4.jpg", personaje: "Pompompurin" },
-    { imagen: "media/productos/wallaper/pompompurin5.jpg", personaje: "Pompompurin" },
-    { imagen: "media/productos/wallaper/pochacco.jpg", personaje: "Pochacco" },
-    { imagen: "media/productos/wallaper/pochacco2.jpg", personaje: "Pochacco" },
-    { imagen: "media/productos/wallaper/pochacco3.jpg", personaje: "Pochacco" },
-    { imagen: "media/productos/wallaper/pochacco4.jpg", personaje: "Pochacco" },
-    { imagen: "media/productos/wallaper/pochacco5.jpg", personaje: "Pochacco" },
-    { imagen: "media/productos/wallaper/sanrio.jpg", personaje: "Sanrio" },
-    { imagen: "media/productos/wallaper/sanrio2.jpg", personaje: "Sanrio" },
-    { imagen: "media/productos/wallaper/sanrio3.jpg", personaje: "Sanrio" },
-    { imagen: "media/productos/wallaper/sanrio4.jpg", personaje: "Sanrio" },
-    { imagen: "media/productos/wallaper/sanrio5.jpg", personaje: "Sanrio" }
-]
 
 // primera sección de productos
 
@@ -274,11 +244,6 @@ document.querySelectorAll(".characters img").forEach(img => {
 });
 
 //interacción con los outfits
-
-const outfits = [
-    option
-]
-
 //wallpapers 
 const wallpapergrid = document.getElementById("wallpaper-grid");
 
@@ -287,12 +252,11 @@ for (let i = 0; i < wallpapers.length; i++) {
 
     const card = document.createElement("div");
     card.classList.add("product-card");
-    
+
     const img = document.createElement("img");
     img.src = p.imagen;
-    img.alt = p.nombre;
+    img.alt = p.personaje;
 
-    top.appendChild(img);
-
-    grid.appendChild(card);
+    card.appendChild(img);
+    wallpapergrid.appendChild(card);
 }
