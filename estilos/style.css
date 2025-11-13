@@ -515,6 +515,68 @@ body.pochacco .product-card .card-top {
   background: rgb(168.4518828452, 51.5481171548, 62.5941422594);
 }
 
+.footer {
+  background-color: #ffffff;
+  border-top: 0.15em solid #0C0C0C;
+  padding: 2em 4em;
+  margin-top: 4em;
+}
+.footer .footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+}
+.footer .footer-logo {
+  text-align: center;
+}
+.footer .footer-logo img {
+  height: 3em;
+  margin-bottom: 0.5em;
+}
+.footer .footer-logo p {
+  font-family: "Frankfurter Std", sans-serif;
+  font-size: 1em;
+  color: #0C0C0C;
+}
+.footer .footer-links {
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.footer .footer-links a {
+  font-family: "Futura Cyrillic", sans-serif;
+  font-size: 0.9em;
+  color: #0C0C0C;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.footer .footer-links a:hover {
+  color: #C74854;
+  text-decoration: underline;
+}
+.footer .footer-copy p {
+  font-family: "Futura Cyrillic", sans-serif;
+  font-size: 0.8em;
+  color: #777;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .footer {
+    padding: 2em;
+  }
+  .footer .footer-links {
+    gap: 1em;
+  }
+  .footer .footer-links a {
+    font-size: 0.85em;
+  }
+  .footer .footer-logo img {
+    height: 2.5em;
+  }
+}
+
 body {
   background-color: #E6FFE2;
   margin: 0;
