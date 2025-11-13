@@ -3,6 +3,8 @@
 @import 'header';
 @import 'products';
 @import 'wallpaper';
+@import 'print';
+@import 'producto';
 
 body {
   background-color: $primary-color;
@@ -94,22 +96,6 @@ body.pochacco {
   background-size: cover;
   background-position: center;
   margin: 5em 0em;
-}
-
-.foto3 {
-  background-image: url(../media/banner3.png);
-  width: 100%;
-  height: 25em;
-  background-size: cover;
-  background-position: center;
-}
-
-.foto4 {
-  background-color: $light-color;
-  width: 100%;
-  height: 15em;
-  background-size: cover;
-  background-position: center;
 }
 
 .banner-chico {

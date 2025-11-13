@@ -34,6 +34,7 @@
     &:hover {
       transform: translateY(-0.2em);
       @include soft-shadow;
+      cursor: pointer;
     }
 
     .card-top {
@@ -52,26 +53,15 @@
       img {
         width: 100%;
         height: 100%;
-        object-fit: contain;
+        object-fit: cover;
         border-radius: 1em;
-      }
-
-      .favorite {
-        position: absolute;
-        top: 0.5em;
-        right: 0.5em;
-
-        img {
-          width: 1em;
-          height: 1em;
-        }
       }
     }
 
     .card-bottom {
       background-color: $light-color;
       border-radius: 0 0 1em 1em;
-      padding: 0.8em 0.5em;
+      padding: 0.8em 1em;
       text-align: left;
 
       .info {
@@ -187,7 +177,6 @@ body.pochacco {
 }
 
 .promo-grid {
-  background-color: $primary-color;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(3, 1fr);

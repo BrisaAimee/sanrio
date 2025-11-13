@@ -76,7 +76,39 @@ const moreProducts = [
     { nombre: "Taza My Melody", precio: 212, imagen: "media/productos/mymelody/mymelody-taza.png", personaje: "My Melody" },
 ];
 
-// primera sección de productos
+const descripcionesPersonajes = {
+  "Sanrio": "Colección oficial Sanrio con diseños adorables y materiales de calidad. Perfecto para regalar, coleccionar o decorar tus espacios.",
+  "Hello Kitty": "Productos oficiales de Hello Kitty con estilo clásico y súper cute. Diseñados con acabados cuidados y materiales de alta durabilidad.",
+  "Kuromi": "Colección de Kuromi con estilo rebelde y kawaii. Ideal para quienes aman el aesthetic dark-cute, con detalles únicos y personalidad fuerte.",
+  "Cinnamonroll": "Productos suaves, tiernos y pastel inspirados en Cinnamoroll. Perfectos para quienes buscan un estilo esponjoso, celeste y adorable.",
+  "My Melody": "Colección rosa pastel de My Melody, delicada, tierna y súper aesthetic. Ideal para fans del estilo soft y cute.",
+  "Pochacco": "Productos deportivos, tiernos y súper cómodos inspirados en el perrito Pochacco. Perfectos para uso diario, estudio o regalos.",
+  "Pompompurin": "Colección amarilla y suave de Pompompurin, ideal para amantes del estilo cozy. Materiales confortables y diseños súper abrazables."
+};
+
+
+let params = new URLSearchParams(window.location.search);
+let id = params.get("producto"); // ejemplo: "more-5"
+
+let [tipo, index] = id.split("-");
+index = parseInt(index);
+
+let producto;
+
+// Seleccionar array correcto
+if (tipo === "main") {
+    producto = mainProducts[index];
+} else if (tipo === "more") {
+    producto = moreProducts[index];
+}
+
+// Rellenar HTML
+document.getElementById("product-image").src = producto.imagen;
+document.getElementById("product-name").textContent = producto.nombre;
+document.getElementById("product-description").textContent = descripcionesPersonajes[producto.personaje];
+document.getElementById("product-price").textContent = "$" + producto.precio;
+document.getElementById("product-character").textContent = producto.personaje;
+
 
 const grid = document.getElementById("productGrid");
 
@@ -120,118 +152,3 @@ for (let i = 0; i < mainProducts.length; i++) {
     });
     grid.appendChild(card);
 }
-
-// segunda sección de productos
-
-const grid2 = document.getElementById("productGrid2");
-
-function mostrarProductos(lista) {
-    grid2.innerHTML = "";
-
-    for (let i = 0; i < lista.length; i++) {
-        const p = lista[i];
-
-        const card = document.createElement("div");
-        card.classList.add("product-card");
-
-        const top = document.createElement("div");
-        top.classList.add("card-top");
-
-        const img = document.createElement("img");
-        img.src = p.imagen;
-        img.alt = p.nombre;
-
-        top.appendChild(img);
-
-        const bottom = document.createElement("div");
-        bottom.classList.add("card-bottom");
-
-        const info = document.createElement("div");
-        info.classList.add("info");
-
-        const name = document.createElement("h3");
-        name.textContent = p.nombre;
-
-        const price = document.createElement("p");
-        price.classList.add("price");
-        price.textContent = `$${p.precio}`;
-
-        info.appendChild(name);
-        info.appendChild(price);
-        bottom.appendChild(info);
-
-        card.appendChild(top);
-        card.appendChild(bottom);
-
-    img.addEventListener("click", () => {
-        window.location.href = `producto.html?producto=more-${i}`;
-    });
-
-        grid2.appendChild(card);
-    }
-}
-
-const destacados = moreProducts.slice(0, 14);
-mostrarProductos(destacados); //
-
-// agrega eventos a las imágenes de los personajes
-document.querySelectorAll(".characters img").forEach(img => {
-    img.addEventListener("click", () => {
-        const personaje = img.dataset.character; // obtiene el personaje
-        document.body.className = "";
-        document.body.classList.add(personaje.toLowerCase().replace(" ", "-"));
-
-
-        grid2.innerHTML = "";
-
-        for (let i = 0; i < moreProducts.length; i++) {
-            const p = moreProducts[i];
-            if (p.personaje === personaje) {
-
-                const card = document.createElement("div");
-                card.classList.add("product-card");
-
-                const top = document.createElement("div");
-                top.classList.add("card-top");
-
-                const fav = document.createElement("div");
-                fav.classList.add("favorite");
-                const heart = document.createElement("img");
-                heart.src = "media/corazon.png";
-                heart.alt = "Me gusta";
-                fav.appendChild(heart);
-
-                const imgP = document.createElement("img");
-                imgP.src = p.imagen;
-                imgP.alt = p.nombre;
-
-                top.appendChild(imgP);
-                top.appendChild(fav);
-
-                const bottom = document.createElement("div");
-                bottom.classList.add("card-bottom");
-
-                const info = document.createElement("div");
-                info.classList.add("info");
-
-                const name = document.createElement("h3");
-                name.textContent = p.nombre;
-
-                const price = document.createElement("p");
-                price.classList.add("price");
-                price.textContent = `$${p.precio}`;
-
-                info.appendChild(name);
-                info.appendChild(price);
-                bottom.appendChild(info);
-
-                card.appendChild(top);
-                card.appendChild(bottom);
-
-                grid2.appendChild(card);
-            }
-        }
-    });
-});
-
-//interacción con los outfits

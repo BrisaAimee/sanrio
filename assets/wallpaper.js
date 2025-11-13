@@ -28,8 +28,7 @@ const wallpapers = [
     { imagen: "media/productos/wallpaper/pochacco2.jpg", personaje: "Pochacco" },
     { imagen: "media/productos/wallpaper/pochacco3.jpg", personaje: "Pochacco" },
     { imagen: "media/productos/wallpaper/pochacco4.jpg", personaje: "Pochacco" },
-    { imagen: "media/productos/wallpaper/pochacco5.jpg", personaje: "Pochacco" },
-    { imagen: "media/productos/wallpaper/sanrio.jpg", personaje: "Sanrio" },
+    { imagen: "media/productos/wallpaper/sanrio1.jpg", personaje: "Sanrio" },
     { imagen: "media/productos/wallpaper/sanrio2.jpg", personaje: "Sanrio" },
     { imagen: "media/productos/wallpaper/sanrio3.jpg", personaje: "Sanrio" },
     { imagen: "media/productos/wallpaper/sanrio4.jpg", personaje: "Sanrio" },
@@ -41,6 +40,12 @@ const wallpapergrid = document.getElementById("wallpaper-grid");
 for (let i = 0; i < wallpapers.length; i++) {
     const p = wallpapers[i];
 
+    const downloadLink = document.createElement("a");
+    downloadLink.href = p.imagen;
+
+    const filename = `${p.personaje}_${i + 1}.jpg`;
+    downloadLink.download = filename;
+
     const card = document.createElement("div");
     card.classList.add("product-card");
 
@@ -49,6 +54,9 @@ for (let i = 0; i < wallpapers.length; i++) {
     img.alt = p.personaje;
 
     card.appendChild(img);
-    wallpapergrid.appendChild(card);
+
+    downloadLink.appendChild(card);
+
+    wallpapergrid.appendChild(downloadLink);
 }
 
