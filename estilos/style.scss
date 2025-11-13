@@ -35,11 +35,26 @@ body.kuromi {
     top: -15%;
   }
 
-    .foto {
+  .foto {
     background-image: url(../media/banners/kuromi/banner-kuromi.png);
     transition: background-image 0.6s ease-in-out;
+    position: relative;
+
+    #outfit-layer {
+      position: absolute;
+      bottom: 0;
+      right: 10%;
+      width: 200px;
+      opacity: 0;
+      transition: opacity 0.4s ease-in-out;
+    }
+
+    &.mostrar-outfit #outfit-layer {
+      opacity: 1;
+    }
   }
 }
+
 
 body.cinnamonroll {
   background-color: $cinnamon-primary;

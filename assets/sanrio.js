@@ -273,4 +273,26 @@ document.querySelectorAll(".characters img").forEach(img => {
     });
 });
 
+//interacción con los outfits
 
+const outfits = [
+    option
+]
+
+//wallpapers 
+const wallpapergrid = document.getElementById("wallpaper-grid");
+
+for (let i = 0; i < wallpapers.length; i++) {
+    const p = wallpapers[i];
+
+    const card = document.createElement("div");
+    card.classList.add("product-card");
+    
+    const img = document.createElement("img");
+    img.src = p.imagen;
+    img.alt = p.nombre;
+
+    top.appendChild(img);
+
+    grid.appendChild(card);
+}
