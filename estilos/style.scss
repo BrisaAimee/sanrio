@@ -10,12 +10,29 @@ body {
   transition: background-color 0.8s ease-in-out;
 }
 
-body.hello-kitty { background-color: $light-color; }
-body.kuromi { background-color: $kuromi-primary; }
-body.cinnamonroll { background-color: $cinnamon-primary; }
-body.my-melody { background-color: $melody-primary; }
-body.pompompurin { background-color: $purin-primary; }
-body.pochacco { background-color: $pochacco-primary; }
+body.hello-kitty {
+  background-color: $light-color;
+}
+
+body.kuromi {
+  background-color: $kuromi-primary;
+}
+
+body.cinnamonroll {
+  background-color: $cinnamon-primary;
+}
+
+body.my-melody {
+  background-color: $melody-primary;
+}
+
+body.pompompurin {
+  background-color: $purin-primary;
+}
+
+body.pochacco {
+  background-color: $pochacco-primary;
+}
 
 .button {
   @include soft-shadow;
@@ -63,6 +80,25 @@ body.pochacco { background-color: $pochacco-primary; }
   font-family: $font-primary;
   font-size: 1.7em;
   @include flex-center;
+  overflow: hidden;
+
+  .cartel-inf {
+    display: inline-flex;
+    white-space: nowrap;
+    animation: scroll 15s linear infinite;
+    width: max-content;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+
 }
 
 .characters-section {

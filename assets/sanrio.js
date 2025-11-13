@@ -160,8 +160,11 @@ for (let i = 0; i < mainProducts.length; i++) {
 
 const grid2 = document.getElementById("productGrid2");
 
-for (let i = 0; i < moreProducts.length; i++) {
-    const p = moreProducts[i];
+function mostrarProductos(lista) {
+  grid2.innerHTML = "";
+
+  for (let i = 0; i < lista.length; i++) {
+    const p = lista[i];
 
     const card = document.createElement("div");
     card.classList.add("product-card");
@@ -204,7 +207,11 @@ for (let i = 0; i < moreProducts.length; i++) {
     card.appendChild(bottom);
 
     grid2.appendChild(card);
+  }
 }
+
+const destacados = moreProducts.slice(0, 14);
+mostrarProductos(destacados); //
 
 // agrega eventos a las imágenes de los personajes
 document.querySelectorAll(".characters img").forEach(img => {
