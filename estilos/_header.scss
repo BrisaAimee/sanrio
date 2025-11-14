@@ -13,6 +13,7 @@
 
     a {
       display: inline-block;
+
       img {
         width: 1.5em;
         height: 1.5em;
@@ -44,6 +45,7 @@
     li {
       a {
         display: inline-block;
+
         img {
           width: 1.5em;
           height: 1.5em;
@@ -54,6 +56,24 @@
           transform: scale(1.1);
         }
       }
+    }
+  }
+
+  @include tablet {
+    .logo {
+      height: 3em;
+    }
+  }
+
+  @include mobile {
+    padding: 1em;
+
+    .logo {
+      height: 2.4em;
+    }
+
+    .btn-cart-user ul {
+      gap: .5em;
     }
   }
 }

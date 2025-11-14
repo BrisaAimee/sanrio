@@ -1,5 +1,7 @@
 @import 'variables';
 @import 'mixins';
+@import 'responsive';
+
 @import 'header';
 @import 'products';
 @import 'wallpaper';
@@ -10,6 +12,7 @@
 @import 'calendario';
 @import 'temas';
 @import 'banners';
+
 
 body {
   background-color: $primary-color;

@@ -82,7 +82,23 @@
           transition: color 0.6s ease-in-out;
         }
       }
+
+      @include mobile {
+        padding: 0.3em 0.8em;
+      }
     }
+  }
+
+  @include laptop {
+    padding: 2em 4em;
+  }
+
+  @include tablet {
+    padding: 2em 2em;
+  }
+
+  @include mobile {
+    padding: 1.5em 1em;
   }
 }
 
@@ -206,7 +222,7 @@ body.pochacco {
     justify-content: center;
     align-items: center;
 
-    h1 {
+    h2 {
       margin: 1em;
       font-family: $font-primary;
       color: $dark-color;
@@ -228,7 +244,8 @@ body.pochacco {
     justify-content: center;
     align-items: center;
 
-    h1 {
+
+    h2 {
       margin: 1em;
       font-family: $font-primary;
       color: $dark-color;
@@ -236,6 +253,10 @@ body.pochacco {
       display: inline-block;
       padding: 0.2em 0.5em;
       border-radius: 0.5em;
+    }
+
+        @include mobile {
+      align-items: center;
     }
   }
 
@@ -250,7 +271,7 @@ body.pochacco {
     justify-content: center;
     align-items: start;
 
-    h1 {
+    h2 {
       margin: 1em;
       font-family: $font-primary;
       color: $dark-color;
@@ -258,6 +279,10 @@ body.pochacco {
       display: inline-block;
       padding: 0.2em 0.5em;
       border-radius: 0.5em;
+    }
+
+        @include mobile {
+      align-items: center;
     }
   }
 
@@ -272,7 +297,7 @@ body.pochacco {
     justify-content: center;
     align-items: start;
 
-    h1 {
+    h2 {
       margin: 1em;
       font-family: $font-primary;
       color: $dark-color;
@@ -281,5 +306,22 @@ body.pochacco {
       padding: 0.2em 0.5em;
       border-radius: 0.5em;
     }
+
+    @include mobile {
+      align-items: center;
+    }
   }
+
+  @include laptop {
+    padding: 2em 4em;
+  }
+
+  @include tablet {
+    padding: 2em 2em;
+  }
+
+  @include mobile {
+    padding: 1.5em 1em;
+  }
+
 }

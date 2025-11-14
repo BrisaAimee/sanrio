@@ -71,4 +71,21 @@
       height: 2.5em;
     }
   }
+
+  @include tablet {
+    padding: 2em;
+  }
+
+  @include mobile {
+    padding: 1.5em;
+
+    .footer-links a {
+      font-size: .8em;
+    }
+
+    .footer-logo img {
+      height: 2.4em;
+    }
+  }
+
 }

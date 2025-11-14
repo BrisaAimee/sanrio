@@ -1,0 +1,62 @@
+$bp-small: 480px;     // móviles chicos
+$bp-medium: 768px;    // tablets vertical
+$bp-large: 1024px;    // laptops
+$bp-xlarge: 1400px;   // monitores grandes
+
+@mixin mobile {
+  @media (max-width: #{$bp-small}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: #{$bp-medium}) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (max-width: #{$bp-large}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$bp-xlarge}) {
+    @content;
+  }
+}
+
+@include mobile {
+
+  /* evita scroll horizontal */
+  * {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
+  body {
+    overflow-x: hidden !important;
+  }
+
+  .header {
+    justify-content: space-between;
+    padding: 0.8em 1em !important;
+  }
+
+  .texto-foto {
+    padding: 1em 1.5em !important;
+  }
+
+  .texto-foto h1 {
+    font-size: 2.2em !important;
+  }
+
+  .texto-foto h3 {
+    font-size: 1em !important;
+  }
+
+  .personaje-img {
+    display: none !important;
+  }
+}

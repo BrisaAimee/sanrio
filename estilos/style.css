@@ -26,6 +26,32 @@
   src: url("../assets/fonts/FuturaCyrillicMedium.otf") format("opentype");
   font-weight: 500;
 }
+@media (max-width: 480px) {
+  /* evita scroll horizontal */
+  * {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+  body {
+    overflow-x: hidden !important;
+  }
+  .header {
+    justify-content: space-between;
+    padding: 0.8em 1em !important;
+  }
+  .texto-foto {
+    padding: 1em 1.5em !important;
+  }
+  .texto-foto h1 {
+    font-size: 2.2em !important;
+  }
+  .texto-foto h3 {
+    font-size: 1em !important;
+  }
+  .personaje-img {
+    display: none !important;
+  }
+}
 @font-face {
   font-family: "Frankfurter Std";
   src: url("../assets/fonts/Frankfurter Std Regular.otf") format("opentype");
@@ -59,7 +85,7 @@
   border-bottom: 0.15em solid #303030;
   padding: 1em 2em;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   position: relative;
 }
@@ -87,7 +113,7 @@
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 1em;
 }
@@ -101,6 +127,22 @@
 }
 .header .btn-cart-user li a:hover img {
   transform: scale(1.1);
+}
+@media (max-width: 768px) {
+  .header .logo {
+    height: 3em;
+  }
+}
+@media (max-width: 480px) {
+  .header {
+    padding: 1em;
+  }
+  .header .logo {
+    height: 2.4em;
+  }
+  .header .btn-cart-user ul {
+    gap: 0.5em;
+  }
 }
 
 .products {
@@ -177,6 +219,26 @@
   font-weight: 500;
   color: #303030;
   transition: color 0.6s ease-in-out;
+}
+@media (max-width: 480px) {
+  .products .product-card .card-bottom {
+    padding: 0.3em 0.8em;
+  }
+}
+@media (max-width: 1024px) {
+  .products {
+    padding: 2em 4em;
+  }
+}
+@media (max-width: 768px) {
+  .products {
+    padding: 2em 2em;
+  }
+}
+@media (max-width: 480px) {
+  .products {
+    padding: 1.5em 1em;
+  }
 }
 
 body.hello-kitty .product-card {
@@ -273,7 +335,7 @@ body.pochacco .product-card .card-top {
   justify-content: center;
   align-items: center;
 }
-.promo-grid .item1 h1 {
+.promo-grid .item1 h2 {
   margin: 1em;
   font-family: "Frankfurter Std", sans-serif;
   color: #303030;
@@ -292,7 +354,7 @@ body.pochacco .product-card .card-top {
   justify-content: center;
   align-items: center;
 }
-.promo-grid .item2 h1 {
+.promo-grid .item2 h2 {
   margin: 1em;
   font-family: "Frankfurter Std", sans-serif;
   color: #303030;
@@ -300,6 +362,11 @@ body.pochacco .product-card .card-top {
   display: inline-block;
   padding: 0.2em 0.5em;
   border-radius: 0.5em;
+}
+@media (max-width: 480px) {
+  .promo-grid .item2 {
+    align-items: center;
+  }
 }
 .promo-grid .item3 {
   background-image: url(../media/stickers.png);
@@ -311,7 +378,7 @@ body.pochacco .product-card .card-top {
   justify-content: center;
   align-items: start;
 }
-.promo-grid .item3 h1 {
+.promo-grid .item3 h2 {
   margin: 1em;
   font-family: "Frankfurter Std", sans-serif;
   color: #303030;
@@ -319,6 +386,11 @@ body.pochacco .product-card .card-top {
   display: inline-block;
   padding: 0.2em 0.5em;
   border-radius: 0.5em;
+}
+@media (max-width: 480px) {
+  .promo-grid .item3 {
+    align-items: center;
+  }
 }
 .promo-grid .item4 {
   background-image: url(../media/dibujar.png);
@@ -330,7 +402,7 @@ body.pochacco .product-card .card-top {
   justify-content: center;
   align-items: start;
 }
-.promo-grid .item4 h1 {
+.promo-grid .item4 h2 {
   margin: 1em;
   font-family: "Frankfurter Std", sans-serif;
   color: #303030;
@@ -338,6 +410,26 @@ body.pochacco .product-card .card-top {
   display: inline-block;
   padding: 0.2em 0.5em;
   border-radius: 0.5em;
+}
+@media (max-width: 480px) {
+  .promo-grid .item4 {
+    align-items: center;
+  }
+}
+@media (max-width: 1024px) {
+  .promo-grid {
+    padding: 2em 4em;
+  }
+}
+@media (max-width: 768px) {
+  .promo-grid {
+    padding: 2em 2em;
+  }
+}
+@media (max-width: 480px) {
+  .promo-grid {
+    padding: 1.5em 1em;
+  }
 }
 
 .titulo {
@@ -427,6 +519,20 @@ body.pochacco .product-card .card-top {
 #print-grid .product-card:hover img {
   transform: scale(1.08);
 }
+@media (max-width: 768px) {
+  #print-grid {
+    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+  }
+}
+@media (max-width: 480px) {
+  #print-grid {
+    grid-template-columns: repeat(auto-fit, minmax(8em, 1fr));
+    gap: 1em;
+  }
+  #print-grid .product-card img {
+    height: 12em;
+  }
+}
 
 .product-detail {
   display: flex;
@@ -514,11 +620,33 @@ body.pochacco .product-card .card-top {
 .product-detail .product-info button:hover {
   background: rgb(168.4518828452, 51.5481171548, 62.5941422594);
 }
+@media (max-width: 1024px) {
+  .product-detail {
+    padding: 2em 4em;
+  }
+}
+@media (max-width: 768px) {
+  .product-detail {
+    padding: 1.5em;
+  }
+}
+@media (max-width: 480px) {
+  .product-detail {
+    padding: 1em;
+  }
+  .product-detail .product-card {
+    width: 100%;
+    height: auto;
+  }
+  .product-detail .card-top {
+    height: 8em;
+  }
+}
 
 .button {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   background-color: #FFCDCD;
   color: #303030;
@@ -593,6 +721,22 @@ body.pochacco .product-card .card-top {
   }
   .footer .footer-logo img {
     height: 2.5em;
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    padding: 2em;
+  }
+}
+@media (max-width: 480px) {
+  .footer {
+    padding: 1.5em;
+  }
+  .footer .footer-links a {
+    font-size: 0.8em;
+  }
+  .footer .footer-logo img {
+    height: 2.4em;
   }
 }
 
@@ -683,6 +827,20 @@ body.pochacco .product-card .card-top {
 #calendario-grid .product-card:hover img {
   transform: scale(1.08);
 }
+@media (max-width: 768px) {
+  #calendario-grid {
+    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+  }
+}
+@media (max-width: 480px) {
+  #calendario-grid {
+    grid-template-columns: repeat(auto-fit, minmax(8em, 1fr));
+    gap: 1em;
+  }
+  #calendario-grid .product-card img {
+    height: 12em;
+  }
+}
 
 body.hello-kitty {
   background-color: #ffffff;
@@ -720,6 +878,7 @@ body.pochacco {
   text-align: center;
 }
 .foto .texto-foto {
+  display: inline-block;
   padding: 2em 4em;
   border-radius: 3em;
 }
@@ -737,6 +896,28 @@ body.pochacco {
   color: #303030;
   margin: 0.5em 0 0 0;
 }
+.foto .personaje-img {
+  width: 22em;
+  max-width: 100%;
+  transition: opacity 0.2s ease;
+  margin-right: 15em;
+}
+@media (max-width: 768px) {
+  .foto {
+    height: 18em;
+  }
+}
+@media (max-width: 480px) {
+  .foto {
+    height: 15em;
+  }
+  .foto .texto-foto h1 {
+    font-size: 2.3em;
+  }
+  .foto .texto-foto h3 {
+    font-size: 1.1em;
+  }
+}
 
 #banner-personaje {
   transition: background-image 0.3s ease-in-out, opacity 0.4s ease-in-out;
@@ -746,7 +927,7 @@ body.pochacco {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3em 4em;
+  padding: 1em 4em;
   margin: 0;
   width: 100%;
   transition: background-color 0.5s ease;
@@ -775,6 +956,16 @@ body.pochacco {
   font-weight: 500;
   line-height: 1.3;
 }
+.personaje-banner img {
+  width: 20em;
+  max-width: 100%;
+  padding: 0;
+}
+@media (max-width: 480px) {
+  .personaje-banner img {
+    opacity: 0;
+  }
+}
 .personaje-banner .outfit-buttons {
   display: flex;
   gap: 1em;
@@ -797,39 +988,26 @@ body.pochacco {
   border-color: #000;
   transform: scale(1.1);
 }
-.personaje-banner .personaje-img {
-  width: 22em;
-  max-width: 100%;
-  transition: opacity 0.2s ease;
-  margin-right: 15em;
-}
-
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   .personaje-banner {
     flex-direction: column;
     text-align: center;
     gap: 2em;
-    padding: 2em;
-  }
-  .personaje-banner .info {
-    max-width: 90%;
-  }
-  .personaje-banner .personaje-img {
-    width: 18em;
   }
 }
-@media (max-width: 600px) {
-  .personaje-banner .outfit-buttons .outfit-btn {
-    width: 2.6em;
-    height: 2.6em;
-  }
+@media (max-width: 480px) {
   .personaje-banner .info h1 {
     font-size: 2em;
   }
   .personaje-banner .info p {
     font-size: 1.1em;
   }
+  .personaje-banner .outfit-btn {
+    width: 2.6em;
+    height: 2.6em;
+  }
 }
+
 .foto2 {
   background-image: url(../media/banners/banner2.png);
   width: 100%;
@@ -869,7 +1047,7 @@ body.pochacco {
   font-family: "Frankfurter Std", sans-serif;
   font-size: 1.7em;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   overflow: hidden;
 }
@@ -905,7 +1083,7 @@ body.pochacco {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   justify-content: center;
   gap: 2em;

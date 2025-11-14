@@ -101,7 +101,7 @@ const personajes = {
 
     "Kuromi": {
         nombre: "Kuromi",
-        descripcion: "LKuromi es la traviesa y encantadora rival de My Melody, aunque detrás de su apariencia rebelde y su estilo punk esconde un corazón más dulce de lo que deja ver. Le encanta escribir en su diario, hacer travesuras y mantener su imagen fuerte y atrevida.",
+        descripcion: "Kuromi es la traviesa y encantadora rival de My Melody, aunque detrás de su apariencia rebelde y su estilo punk esconde un corazón más dulce de lo que deja ver. Le encanta escribir en su diario, hacer travesuras y mantener su imagen fuerte y atrevida.",
         backgroundImg: "media/banners/kuromi/kuromi-fondo.png",
         outfits: [
             "media/banners/kuromi/kuromi-outfit1.png",
