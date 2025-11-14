@@ -76,6 +76,75 @@ const moreProducts = [
     { nombre: "Taza My Melody", precio: 212, imagen: "media/productos/mymelody/mymelody-taza.png", personaje: "My Melody" },
 ];
 
+const personajes = {
+    "Hello Kitty": {
+        nombre: "Hello Kitty",
+        descripcion: "Hello Kitty es una de las figuras más queridas del universo Sanrio. Esta icónica gatita blanca, reconocida por su lazo rojo característico, representa ternura, amistad y la idea de que un pequeño gesto puede iluminar el día de cualquiera.",
+        backgroundImg: "media/banners/hellokitty/hellokitty-fondo.png",
+        outfits: [
+            "media/banners/hellokitty/hellokitty-outfit1.png",
+            "media/banners/hellokitty/hellokitty-outfit2.png",
+            "media/banners/hellokitty/hellokitty-outfit3.png"
+        ]
+    },
+
+    "My Melody": {
+        nombre: "My Melody",
+        descripcion: "My Melody es una dulce conejita que siempre lleva una capucha roja o rosa que ella misma confeccionó junto a su mamá. Con un corazón amable y una actitud siempre positiva, My Melody encuentra alegría en las pequeñas cosas de la vida, ya sea horneando galletas o cuidando a sus amigos.",
+        backgroundImg: "media/banners/mymelody/mymelody-fondo.png",
+        outfits: [
+            "media/banners/mymelody/mymelody-outfit1.png",
+            "media/banners/mymelody/mymelody-outfit2.png",
+            "media/banners/mymelody/mymelody-outfit3.png"
+        ]
+    },
+
+    "Kuromi": {
+        nombre: "Kuromi",
+        descripcion: "LKuromi es la traviesa y encantadora rival de My Melody, aunque detrás de su apariencia rebelde y su estilo punk esconde un corazón más dulce de lo que deja ver. Le encanta escribir en su diario, hacer travesuras y mantener su imagen fuerte y atrevida.",
+        backgroundImg: "media/banners/kuromi/kuromi-fondo.png",
+        outfits: [
+            "media/banners/kuromi/kuromi-outfit1.png",
+            "media/banners/kuromi/kuromi-outfit2.png",
+            "media/banners/kuromi/kuromi-outfit3.png"
+        ]
+    },
+
+    "Cinnamonroll": {
+        nombre: "Cinnamonroll",
+        descripcion: "Cinnamonroll es un adorable perrito blanco con orejas largas y esponjosas que le permiten volar suavemente por el cielo. Es tímido al principio, pero muy cariñoso con quienes le demuestran amor. Le encanta dormir encima de las personas que quiere, acompañar a sus amigos y disfrutar de dulces caseros.",
+        backgroundImg: "media/banners/cinnamonroll/cinnamonroll-fondo.png",
+        outfits: [
+            "media/banners/cinnamonroll/cinnamonroll-outfit1.png",
+            "media/banners/cinnamonroll/cinnamonroll-outfit2.png",
+            "media/banners/cinnamonroll/cinnamonroll-outfit3.png"
+        ]
+    },
+
+    "Pompompurin": {
+        nombre: "Pompompurin",
+        descripcion: "Pompompurin es un perrito golden retriever encantador, conocido por su inseparable boina marrón y su personalidad cálida y amistosa. Es sociable, relajado y siempre está listo para hacer nuevos amigos. Le gusta salir a pasear, tomar siestas y disfrutar postres junto a quienes quiere.",
+        backgroundImg: "media/banners/pompompurin/pompompurin-fondo.png",
+        outfits: [
+            "media/banners/pompompurin/pompompurin-outfit1.png",
+            "media/banners/pompompurin/pompompurin-outfit2.png",
+            "media/banners/pompompurin/pompompurin-outfit3.png"
+        ]
+    },
+
+    "Pochacco": {
+        nombre: "Pochacco",
+        descripcion: "Pochacco es un perrito blanco lleno de energía, famoso por sus orejas negras y su espíritu aventurero. Le encanta el deporte, especialmente correr y explorar nuevos lugares. Su personalidad activa y curiosa lo lleva a descubrir siempre algo nuevo, pero también sabe ser cariñoso y leal con sus amigos.",
+        backgroundImg: "media/banners/pochacco/pochacco-fondo.png",
+        outfits: [
+            "media/banners/pochacco/pochacco-outfit1.png",
+            "media/banners/pochacco/pochacco-outfit2.png",
+            "media/banners/pochacco/pochacco-outfit3.png"
+        ]
+    }
+};
+
+
 // primera sección de productos
 
 const grid = document.getElementById("productGrid");
@@ -163,9 +232,9 @@ function mostrarProductos(lista) {
         card.appendChild(top);
         card.appendChild(bottom);
 
-    img.addEventListener("click", () => {
-        window.location.href = `producto.html?producto=more-${i}`;
-    });
+        img.addEventListener("click", () => {
+            window.location.href = `producto.html?producto=more-${i}`;
+        });
 
         grid2.appendChild(card);
     }
@@ -178,6 +247,8 @@ mostrarProductos(destacados); //
 document.querySelectorAll(".characters img").forEach(img => {
     img.addEventListener("click", () => {
         const personaje = img.dataset.character; // obtiene el personaje
+        cargarPersonaje(personaje);
+
         document.body.className = "";
         document.body.classList.add(personaje.toLowerCase().replace(" ", "-"));
 
@@ -194,19 +265,12 @@ document.querySelectorAll(".characters img").forEach(img => {
                 const top = document.createElement("div");
                 top.classList.add("card-top");
 
-                const fav = document.createElement("div");
-                fav.classList.add("favorite");
-                const heart = document.createElement("img");
-                heart.src = "media/corazon.png";
-                heart.alt = "Me gusta";
-                fav.appendChild(heart);
 
                 const imgP = document.createElement("img");
                 imgP.src = p.imagen;
                 imgP.alt = p.nombre;
 
                 top.appendChild(imgP);
-                top.appendChild(fav);
 
                 const bottom = document.createElement("div");
                 bottom.classList.add("card-bottom");
@@ -235,3 +299,43 @@ document.querySelectorAll(".characters img").forEach(img => {
 });
 
 //interacción con los outfits
+
+function cargarPersonaje(personajeID) {
+    const p = personajes[personajeID];
+
+    // Ocultar el banner default
+    document.getElementById("banner-default").classList.add("hidden");
+    document.getElementById("banner-personaje").classList.remove("hidden");
+
+    // Datos del personaje
+    document.getElementById("personaje-nombre").textContent = p.nombre;
+    document.getElementById("personaje-descripcion").textContent = p.descripcion;
+    document.getElementById("banner-personaje").style.backgroundImage = `url(${p.backgroundImg})`;
+
+    // Imagen completa outfit 1
+    const img = document.getElementById("personaje-img");
+    img.src = p.outfits[0];
+    img.dataset.personaje = personajeID;
+    img.dataset.outfit = 0;
+}
+
+
+const botones = document.querySelectorAll(".outfit-btn");
+
+botones.forEach(btn => {
+    btn.addEventListener("click", () => {
+        const outfitIndex = btn.dataset.outfit;
+        const img = document.getElementById("personaje-img");
+        const personajeID = img.dataset.personaje;
+
+        // animación opcional
+        img.style.opacity = 0;
+
+        setTimeout(() => {
+            img.src = personajes[personajeID].outfits[outfitIndex];
+            img.dataset.outfit = outfitIndex;
+            img.style.opacity = 1;
+        }, 200);
+    });
+});
+

@@ -56,7 +56,7 @@
 }
 .header {
   background-color: #ffffff;
-  border-bottom: 0.15em solid #0C0C0C;
+  border-bottom: 0.15em solid #303030;
   padding: 1em 2em;
   display: flex;
   justify-content: space-between;
@@ -108,7 +108,7 @@
 }
 .products h2 {
   font-family: "Frankfurter Std", sans-serif;
-  color: #0C0C0C;
+  color: #303030;
   font-size: 1.2em;
   margin-bottom: 1.5em;
   letter-spacing: 0.05em;
@@ -127,7 +127,7 @@
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  border: 0.2em solid #0C0C0C;
+  border: 0.2em solid #303030;
   border-radius: 2em;
   height: 15em;
   width: 12em;
@@ -141,7 +141,7 @@
 }
 .products .product-card .card-top {
   background-color: #ffffff;
-  border-bottom: 0.2em solid #0C0C0C;
+  border-bottom: 0.2em solid #303030;
   border-radius: 1em;
   height: 10em;
   display: flex;
@@ -167,7 +167,7 @@
 .products .product-card .card-bottom .info h3 {
   font-family: "Futura Cyrillic", sans-serif;
   font-size: 0.9em;
-  color: #0C0C0C;
+  color: #303030;
   margin-left: 0.2em;
   transition: color 0.6s ease-in-out;
 }
@@ -175,7 +175,7 @@
   font-family: "Futura Cyrillic", sans-serif;
   font-size: 0.85em;
   font-weight: 500;
-  color: #0C0C0C;
+  color: #303030;
   transition: color 0.6s ease-in-out;
 }
 
@@ -235,14 +235,14 @@ body.pompompurin .product-card .card-top {
 }
 
 body.pochacco .product-card {
-  border-color: #0C0C0C;
+  border-color: #303030;
 }
 body.pochacco .products .product-card .card-bottom .info h3,
 body.pochacco .products .product-card .card-bottom .info .price {
-  color: #0C0C0C;
+  color: #303030;
 }
 body.pochacco .product-card .card-top {
-  border-bottom-color: #0C0C0C;
+  border-bottom-color: #303030;
 }
 
 .promo-grid {
@@ -254,7 +254,7 @@ body.pochacco .product-card .card-top {
   height: 90vh;
 }
 .promo-grid .promo-item {
-  border: 0.2em solid #0C0C0C;
+  border: 0.2em solid #303030;
   border-radius: 1em;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
   min-height: 200px;
@@ -276,7 +276,7 @@ body.pochacco .product-card .card-top {
 .promo-grid .item1 h1 {
   margin: 1em;
   font-family: "Frankfurter Std", sans-serif;
-  color: #0C0C0C;
+  color: #303030;
   background-color: rgba(255, 255, 255, 0.7);
   display: inline-block;
   padding: 0.2em 0.5em;
@@ -295,7 +295,7 @@ body.pochacco .product-card .card-top {
 .promo-grid .item2 h1 {
   margin: 1em;
   font-family: "Frankfurter Std", sans-serif;
-  color: #0C0C0C;
+  color: #303030;
   background-color: rgba(255, 255, 255, 0.7);
   display: inline-block;
   padding: 0.2em 0.5em;
@@ -314,7 +314,7 @@ body.pochacco .product-card .card-top {
 .promo-grid .item3 h1 {
   margin: 1em;
   font-family: "Frankfurter Std", sans-serif;
-  color: #0C0C0C;
+  color: #303030;
   background-color: rgba(255, 255, 255, 0.7);
   display: inline-block;
   padding: 0.2em 0.5em;
@@ -333,7 +333,7 @@ body.pochacco .product-card .card-top {
 .promo-grid .item4 h1 {
   margin: 1em;
   font-family: "Frankfurter Std", sans-serif;
-  color: #0C0C0C;
+  color: #303030;
   background-color: rgba(255, 255, 255, 0.7);
   display: inline-block;
   padding: 0.2em 0.5em;
@@ -481,7 +481,7 @@ body.pochacco .product-card .card-top {
   font-size: 2em;
   font-weight: 700;
   margin: 0;
-  color: #0C0C0C;
+  color: #303030;
 }
 .product-detail .product-info #product-price {
   font-size: 1.4em;
@@ -497,7 +497,7 @@ body.pochacco .product-card .card-top {
   padding: 1em;
   border-radius: 0.8em;
   font-size: 1em;
-  color: #0C0C0C;
+  color: #303030;
   background: #FFCDCD;
 }
 .product-detail .product-info button {
@@ -515,9 +515,28 @@ body.pochacco .product-card .card-top {
   background: rgb(168.4518828452, 51.5481171548, 62.5941422594);
 }
 
+.button {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFCDCD;
+  color: #303030;
+  border: none;
+  border-radius: 999px;
+  padding: 0.6em 1.2em;
+  font-family: "Futura Cyrillic", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+}
+.button:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.05);
+}
+
 .footer {
   background-color: #ffffff;
-  border-top: 0.15em solid #0C0C0C;
+  border-top: 0.15em solid #303030;
   padding: 2em 4em;
   margin-top: 4em;
 }
@@ -537,7 +556,7 @@ body.pochacco .product-card .card-top {
 .footer .footer-logo p {
   font-family: "Frankfurter Std", sans-serif;
   font-size: 1em;
-  color: #0C0C0C;
+  color: #303030;
 }
 .footer .footer-links {
   display: flex;
@@ -548,7 +567,7 @@ body.pochacco .product-card .card-top {
 .footer .footer-links a {
   font-family: "Futura Cyrillic", sans-serif;
   font-size: 0.9em;
-  color: #0C0C0C;
+  color: #303030;
   text-decoration: none;
   transition: 0.2s;
 }
@@ -577,11 +596,92 @@ body.pochacco .product-card .card-top {
   }
 }
 
-body {
-  background-color: #E6FFE2;
-  margin: 0;
-  padding: 0;
-  transition: background-color 0.8s ease-in-out;
+.titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titulo h1 {
+  font-family: "Frankfurter Std", sans-serif, sans-serif;
+}
+
+#sticker-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
+  gap: 1.5em;
+  padding: 2em;
+  width: 90%;
+  margin: auto;
+}
+#sticker-grid .product-card {
+  background-color: #ffffff;
+  border-radius: 1em;
+  padding: 0.8em;
+  border: 0.2em solid #E6FFE2;
+  box-shadow: 0 0.3em 0.8em rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+#sticker-grid .product-card:hover {
+  transform: translateY(-0.5em);
+  box-shadow: 0 0.8em 1.2em rgba(0, 0, 0, 0.25);
+}
+#sticker-grid .product-card img {
+  width: 100%;
+  height: 17em;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.8em;
+  transition: transform 0.4s ease;
+}
+#sticker-grid .product-card:hover img {
+  transform: scale(1.08);
+}
+
+.titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titulo h1 {
+  font-family: "Frankfurter Std", sans-serif, sans-serif;
+}
+
+#calendario-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
+  gap: 1.5em;
+  padding: 2em;
+  width: 90%;
+  margin: auto;
+}
+#calendario-grid .product-card {
+  background-color: #ffffff;
+  border-radius: 1em;
+  padding: 0.8em;
+  border: 0.2em solid #E6FFE2;
+  box-shadow: 0 0.3em 0.8em rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+#calendario-grid .product-card:hover {
+  transform: translateY(-0.5em);
+  box-shadow: 0 0.8em 1.2em rgba(0, 0, 0, 0.25);
+}
+#calendario-grid .product-card img {
+  width: 100%;
+  height: 17em;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.8em;
+  transition: transform 0.4s ease;
+}
+#calendario-grid .product-card:hover img {
+  transform: scale(1.08);
 }
 
 body.hello-kitty {
@@ -590,100 +690,6 @@ body.hello-kitty {
 
 body.kuromi {
   background-color: #F5E3FF;
-}
-body.kuromi .foto .option-1 {
-  width: 4em;
-  height: 4em;
-  background-color: #595656;
-  border-radius: 50%;
-  border: 0.3em solid #F5E3FF;
-  position: relative;
-  transition: transform 0.3s ease-in, box-shadow 0.3s ease;
-  left: 65%;
-  top: 45%;
-}
-body.kuromi .foto .option-1:hover {
-  transform: translateY(-2px);
-  filter: brightness(1.05);
-}
-body.kuromi .foto .option-1::before {
-  content: attr(data-num);
-  color: white;
-  font-family: "Frankfurter Std", sans-serif;
-  font-weight: bold;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 1.1em;
-}
-body.kuromi .foto .option-2 {
-  width: 4em;
-  height: 4em;
-  background-color: #595656;
-  border-radius: 50%;
-  border: 0.3em solid #F5E3FF;
-  position: relative;
-  transition: transform 0.3s ease-in, box-shadow 0.3s ease;
-  left: 65%;
-  top: 50%;
-}
-body.kuromi .foto .option-2:hover {
-  transform: translateY(-2px);
-  filter: brightness(1.05);
-}
-body.kuromi .foto .option-2::before {
-  content: attr(data-num);
-  color: white;
-  font-family: "Frankfurter Std", sans-serif;
-  font-weight: bold;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 1.1em;
-}
-body.kuromi .foto .option-3 {
-  width: 4em;
-  height: 4em;
-  background-color: #595656;
-  border-radius: 50%;
-  border: 0.3em solid #F5E3FF;
-  position: relative;
-  transition: transform 0.3s ease-in, box-shadow 0.3s ease;
-  left: 65%;
-  top: -15%;
-}
-body.kuromi .foto .option-3:hover {
-  transform: translateY(-2px);
-  filter: brightness(1.05);
-}
-body.kuromi .foto .option-3::before {
-  content: attr(data-num);
-  color: white;
-  font-family: "Frankfurter Std", sans-serif;
-  font-weight: bold;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 1.1em;
-}
-body.kuromi .foto {
-  background-image: url(../media/banners/kuromi/banner-kuromi.png);
-  transition: background-image 0.6s ease-in-out;
-  position: relative;
-}
-body.kuromi .foto #outfit-layer {
-  position: absolute;
-  bottom: 0;
-  right: 10%;
-  width: 200px;
-  opacity: 0;
-  transition: opacity 0.4s ease-in-out;
-}
-body.kuromi .foto.mostrar-outfit #outfit-layer {
-  opacity: 1;
 }
 
 body.cinnamonroll {
@@ -702,33 +708,128 @@ body.pochacco {
   background-color: #FFFAF5;
 }
 
-.button {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #FFCDCD;
-  color: #0C0C0C;
-  border: none;
-  border-radius: 999px;
-  padding: 0.6em 1.2em;
-  font-family: "Futura Cyrillic", sans-serif;
-  font-weight: 500;
-  cursor: pointer;
-}
-.button:hover {
-  transform: translateY(-2px);
-  filter: brightness(1.05);
-}
-
 .foto {
   background-image: url(../media/banners/banner1.png);
   background-size: cover;
   background-position: center;
   width: 100%;
   height: 25em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.foto .texto-foto {
+  padding: 2em 4em;
+  border-radius: 3em;
+}
+.foto .texto-foto h1 {
+  font-family: "Frankfurter Std", sans-serif, sans-serif;
+  font-weight: 200;
+  font-size: 4em;
+  color: #303030;
+  margin: 0;
+}
+.foto .texto-foto h3 {
+  font-family: "Frankfurter Std", sans-serif, sans-serif;
+  font-size: 2em;
+  font-weight: 500;
+  color: #303030;
+  margin: 0.5em 0 0 0;
 }
 
+#banner-personaje {
+  transition: background-image 0.3s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+.personaje-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3em 4em;
+  margin: 0;
+  width: 100%;
+  transition: background-color 0.5s ease;
+  background-size: cover;
+  background-position: center;
+  gap: 4em;
+}
+.personaje-banner.hidden {
+  display: none;
+}
+.personaje-banner .info {
+  margin-left: 5em;
+  max-width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.personaje-banner .info h1 {
+  font-family: "Frankfurter Std", sans-serif, sans-serif;
+  font-size: 3em;
+  font-weight: 800;
+}
+.personaje-banner .info p {
+  font-family: "Futura Cyrillic", sans-serif, sans-serif;
+  font-size: 1.3em;
+  font-weight: 500;
+  line-height: 1.3;
+}
+.personaje-banner .outfit-buttons {
+  display: flex;
+  gap: 1em;
+  margin-top: 1em;
+}
+.personaje-banner .outfit-buttons .outfit-btn {
+  width: 3.2em;
+  height: 3.2em;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 3px solid white;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.personaje-banner .outfit-buttons .outfit-btn:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+.personaje-banner .outfit-buttons .outfit-btn.active {
+  border-color: #000;
+  transform: scale(1.1);
+}
+.personaje-banner .personaje-img {
+  width: 22em;
+  max-width: 100%;
+  transition: opacity 0.2s ease;
+  margin-right: 15em;
+}
+
+@media (max-width: 900px) {
+  .personaje-banner {
+    flex-direction: column;
+    text-align: center;
+    gap: 2em;
+    padding: 2em;
+  }
+  .personaje-banner .info {
+    max-width: 90%;
+  }
+  .personaje-banner .personaje-img {
+    width: 18em;
+  }
+}
+@media (max-width: 600px) {
+  .personaje-banner .outfit-buttons .outfit-btn {
+    width: 2.6em;
+    height: 2.6em;
+  }
+  .personaje-banner .info h1 {
+    font-size: 2em;
+  }
+  .personaje-banner .info p {
+    font-size: 1.1em;
+  }
+}
 .foto2 {
   background-image: url(../media/banners/banner2.png);
   width: 100%;
@@ -736,10 +837,32 @@ body.pochacco {
   background-size: cover;
   background-position: center;
   margin: 5em 0em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.foto2 .texto-foto2 {
+  padding: 2em 4em;
+  border-radius: 3em;
+}
+.foto2 .texto-foto2 h1 {
+  font-family: "Frankfurter Std", sans-serif, sans-serif;
+  font-weight: 200;
+  font-size: 2em;
+  color: #303030;
+  margin: 0;
+}
+.foto2 .texto-foto2 h3 {
+  font-family: "Frankfurter Std", sans-serif, sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  color: #303030;
+  margin: 0.5em 0 0 0;
 }
 
 .banner-chico {
-  background-color: #0C0C0C;
+  background-color: #303030;
   height: 1.2em;
   width: 100%;
   color: white;
@@ -774,7 +897,7 @@ body.pochacco {
   font-family: "Frankfurter Std", sans-serif;
   font-size: 1.2em;
   letter-spacing: 0.05em;
-  color: #0C0C0C;
+  color: #303030;
   margin-bottom: 1.5em;
 }
 .characters-section .characters {
@@ -805,4 +928,15 @@ body.pochacco {
 .characters-section .characters li:hover {
   transform: translateY(-0.3em);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+body {
+  background-color: #E6FFE2;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.8s ease-in-out;
+}
+
+.hidden {
+  display: none !important;
 }/*# sourceMappingURL=style.css.map */

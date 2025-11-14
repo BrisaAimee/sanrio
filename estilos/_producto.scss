@@ -91,3 +91,9 @@
     }
   }
 }
+
+.button {
+  @include soft-shadow;
+  @include flex-center;
+  @include button($kitty-tertiary, $dark-color);
+}
